@@ -4,7 +4,7 @@
 using namespace std;
 
 //default constructor
-Time::Time(int hours_in = 0, int mins_in = 0, int secs_in = 0){
+Time::Time(int hours_in, int mins_in, int secs_in){
 	setTime(hours_in, mins_in, secs_in);
 }
 
@@ -35,7 +35,7 @@ void Time::getTime(int &hours_out, int &minutes_out, int &secs_out){
 }
 
 void Time::print(void){
-
+	cout << hours << ":" << mins  << ":" << secs;
 }
 
 Time::~Time()
